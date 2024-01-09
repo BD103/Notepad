@@ -14,7 +14,7 @@ function printDiv(id) {
 function openTab(url, onsite=true) {
   var path;
   if (onsite==true) {
-    path = 'https://notepad.bd103.repl.co' + url;
+    path = 'https://bd103.github.io/Notepad' + url;
   }
   else {
     path = url;
