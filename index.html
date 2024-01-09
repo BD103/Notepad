@@ -1,0 +1,42 @@
+<!--  Notepad  -->
+<!-- By: BD103 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Notepad</title>
+  <link rel="icon" href="/imgs/note.svg">
+	<link rel="stylesheet" media="screen" href="/css/classic/default.css">
+  <link rel="stylesheet" media="print" href="/css/classic/print.css">
+  <script src="/src/classic.js"></script>
+</head>
+
+<body>
+
+  <button onclick="saveNote();"><img src="/imgs/save.svg"> Save Instance</button>
+  <button onclick="loadNote();"><img src="/imgs/load.svg"> Load Instance</button>
+
+	<button onclick="print();"><img src="/imgs/paper.svg"> Print Page</button>
+  <button onclick="openTab('/ide.html', onsite=true);"><img src="/imgs/code.svg"> Open Beta IDE</button>
+
+  <form name="instanceSelect">
+    <select name="instance" id="instance">
+      <option value="inst 1">Instance 1</option>
+      <option value="inst 2">Instance 2</option>
+      <option value="inst 3">Instance 3</option>
+    </select>
+  </form>
+
+    <div id="note" contenteditable spellcheck="false">
+      Enter your notes here... :)
+    </div>
+
+    <a href="https://bd103.github.io/projects/notepad/" target="_blank">Notepad made by BD103</a>
+    <a href="https://primer.style/octicons/" target="_blank">Icon Supplied by Octicons</a>
+    <a href="https://www.jetbrains.com/lp/mono/" target="_blank">Font created by JetBrains</a>
+
+    <p class="hint">Hint: Use ctrl+b to load a note, and ctrl+m to save a note.</p>
+	</body>
+  
+</html>

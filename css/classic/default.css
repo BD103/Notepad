@@ -1,0 +1,49 @@
+/*
+CSS for Notepad
+UwU
+*/
+
+@font-face {
+  font-family: 'Jetbrains Mono';
+  src: url('/src/JetBrainsMono.woff2')
+}
+
+body {
+	font-family: 'Jetbrains Mono', 'Lucida Console', Monaco, monospace;
+	background-color: #1E1E1E;
+	color: #FFFFFF;
+	font-size: 1rem;
+	line-height: 1.4;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+#note {
+  padding: 10px;
+  margin: 5px;
+}
+
+option {
+  color: black;
+}
+
+button, select {
+  background-color: transparent;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+button:hover, select:hover {
+  box-shadow: 2px 2px 5px white;
+  transition-duration: 1s;
+}
+
+a, .hint {
+  font-size: 12px;
+}
+
+a:visited {
+  color: white;
+}

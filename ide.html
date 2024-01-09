@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Notepad</title>
+  <link rel="icon" href="/imgs/code.svg">
+	<link href="/css/ide/main.css" rel="stylesheet" type="text/css">
+	<link href="/css/ide/light.css" rel="stylesheet" type="text/css">
+	<script src="/src/highlight.pack.js">
+
+	</script>
+	<script src="/src/ide.js">
+
+	</script>
+</head>
+
+<body>
+
+	<form name="langSelect">
+		<select id="select" name="select">
+			<option value="bash">Bash</option>
+			<option value="c">C</option>
+			<option value="cs">C#</option>
+			<option value="cpp">C++</option>
+			<option value="css">CSS</option>
+			<option value="go">Go</option>
+			<option value="html">HTML/XML</option>
+			<option value="json">JSON</option>
+			<option value="java">Java</option>
+			<option value="js">JavaScript</option>
+			<option value="lua">Lua</option>
+			<option value="md">Markdown</option>
+			<option value="php">PHP</option>
+			<option value="text">Plain Text</option>
+			<option value="python" selected>Python</option>
+			<option value="rust">Rust</option>
+			<option value="sql">SQL</option>
+			<option value="toml">TOML / INI</option>
+			<option value="yaml">YAML</option>
+		</select>
+	</form>
+
+  <div id="code" oninput="updateCode();" onfocus="deLight();" onblur="light();" contenteditable spellcheck="false">print("UwU")</div>
+
+  <a href="https://bd103.github.io/projects/notepad/">Notepad made by BD103</a>
+  <a href="https://primer.style/octicons/">Icon Supplied by Octicons</a>
+  <a href="https://www.jetbrains.com/lp/mono/" target="_blank">Font created by JetBrains</a>
+  
+  <script>
+    sessionStorage.setItem('ideCode', 'print("UwU")');
+    light();
+  </script>
+</body>
+
+</html>

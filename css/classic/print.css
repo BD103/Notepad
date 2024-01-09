@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Jetbrains Mono';
+  src: url('/src/JetBrainsMono.woff2')
+}
+
+body {
+	font-family: 'Jetbrains Mono', 'Lucida Console', Monaco, monospace;
+	background-color: #1E1E1E;
+	color: #FFFFFF;
+	font-size: 1rem;
+	line-height: 1.4;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+button, form, a, .hint {
+  visibility: hidden;
+}
